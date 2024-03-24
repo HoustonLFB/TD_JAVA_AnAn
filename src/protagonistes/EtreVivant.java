@@ -29,7 +29,7 @@ public class EtreVivant {
             texte += "trop violente pour survivre.\n";
             return (texte + mourir());
         } else {
-            texte += "mais il parvient à se relever.\n";
+            texte += "mais il parvient Ã  se relever.\n";
             return texte;
         }
 
