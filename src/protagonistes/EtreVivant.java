@@ -5,6 +5,11 @@ import affrontement.Bataille;
 public class EtreVivant {
 
     protected String nom;
+
+    public int getVie() {
+        return vie;
+    }
+
     protected int vie;
     protected Bataille bataille;
 
