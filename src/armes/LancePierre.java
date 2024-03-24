@@ -2,6 +2,6 @@ package armes;
 
 public class LancePierre extends Arme{
     public LancePierre() {
-        super("Lance-pierre", 10);
+        super("lance-pierre", 10);
     }
 }
