@@ -4,9 +4,12 @@ import affrontement.Bataille;
 
 public class Dragon extends EtreVivant{
 
+    private int bouleTiree;
+
     public Dragon(String nom) {
 
         super(nom, 200);
+        bouleTiree = 0;
     }
 
     public String mourir() {
@@ -18,16 +21,14 @@ public class Dragon extends EtreVivant{
         return bataille.ajouter(this);
     }
 
-    public String subirAttaque(int degats){
-        vie -= degats;
-        String texte = super.getNom() + " subit une violente attaque ";
-        if(vie <= 0){
-            texte += "trop violente pour survivre.\n";
-            return (texte +mourir());
-        } else {
-            texte += "mais il parvient à se relever.\n";
-            return texte;
-        }
 
+
+    public String cracheBouleFeu(Homme homme){
+        if (bouleTiree < 10) {
+            bouleTiree++;
+            return(nom + " crache une boule de feu sur " + homme.getNom() + ".\n" + homme.subirAttaque(100));
+        } else {
+            return (nom + " a voulu attaquer " + homme.getNom() + " mais il n'avait plus de feu en lui.\n" + homme.getNom() + " a eu beaucoup de chance.\n");
+        }
     }
 }
