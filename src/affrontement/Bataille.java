@@ -16,7 +16,7 @@ public class Bataille {
 			texte = homme.parler("Bonjour, je m'appelle " + homme.getNom() + " et je viens me joindre au combat.");
 		} else {
 			texte += (homme.getNom()
-					+ " est le premier à se joindre à la dernière bataille entre les Hommes et les dragons.\n");
+					+ " est le premier Ã  se joindre Ã  la derniÃ¨re bataille entre les Hommes et les dragons.\n");
 		}
 		return texte;
 	}
@@ -27,7 +27,7 @@ public class Bataille {
 		if (campDragon.nbCompagnon() > 1) {
 			texte = ("Un nouveau dragon " + dragon.getNom() + " s'approchait du champ de bataille.\n");
 		} else {
-			texte = "Le dragon " + dragon.getNom() + " fut le premier à arriver sur le champ de bataille.\n";
+			texte = "Le dragon " + dragon.getNom() + " fut le premier Ã  arriver sur le champ de bataille.\n";
 		}
 		return texte;
 	}
@@ -36,7 +36,7 @@ public class Bataille {
 		String texte = "";
 		campDragon.supprimerCompagnon(dragon);
 		if (campDragon.nbCompagnon() == 0 && campHomme.nbCompagnon() > 0) {
-			texte = "Les Hommes ont conquis la lande, leurs villages n'auront plus jamais à trembler devant les dragons.\n";
+			texte = "Les Hommes ont conquis la lande, leurs villages n'auront plus jamais Ã  trembler devant les dragons.\n";
 		}
 		return texte;
 	}

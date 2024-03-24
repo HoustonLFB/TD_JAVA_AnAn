@@ -1,13 +1,14 @@
 package protagonistes;
 
-public class Heros extends EtreVivant {
+public class Heros extends Homme {
 
     public Heros(String nom) {
-        super(nom, 150);
+        super(nom);
+        this.vie = 150;
     }
 
     public String parler(String texte) {
-        return("Le héros " + getNom() + ":" + texte + "\n");
+        return("Le héros " + getNom() + " : " + texte + "\n");
     }
 
 }

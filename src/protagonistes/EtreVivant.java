@@ -1,10 +1,12 @@
 package protagonistes;
 
+import affrontement.Bataille;
+
 public class EtreVivant {
 
     protected String nom;
     protected int vie;
-    private String bataille;
+    protected Bataille bataille;
 
     public EtreVivant(String nom, int vie) {
         this.nom = nom;
@@ -14,4 +16,11 @@ public class EtreVivant {
     public String getNom() {
         return nom;
     }
+
+    public String rejointBataille(Bataille bataille) {
+        this.bataille = bataille;
+        return "";
+    }
 }
+
+

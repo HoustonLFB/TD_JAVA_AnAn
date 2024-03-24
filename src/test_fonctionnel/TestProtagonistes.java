@@ -5,19 +5,19 @@ import protagonistes.Heros;
 import protagonistes.Homme;
 
 public class TestProtagonistes {
-	public static void main(String[] args) {
-		Homme homme = new Homme("Thomas");
-		Heros heros = new Heros("Arthur");
-		Dragon dragon = new Dragon("Dragonnet");
+    public static void main(String[] args) {
+        Homme homme = new Homme("Thomas");
+        Heros heros = new Heros("Arthur");
+        Dragon dragon = new Dragon("Dragonnet");
 
-		System.out.print(homme.parler("Je suis " + homme.getNom() + ", un homme."));
-		System.out.print(heros.parler("Je suis " + heros.getNom() + ", un heros."));
-		System.out.print("Le dragon " + dragon.getNom() + ".");
-	}
+        System.out.print(homme.parler("Je suis " + homme.getNom() + ", un homme."));
+        System.out.print(heros.parler("Je suis " + heros.getNom() + ", un heros."));
+        System.out.print("Le dragon " + dragon.getNom() + ".");
+    }
 
-	// RESULAT :
-	// Thomas : Je suis Thomas, un homme.
-	// Le héros Arthur : Je suis Arthur, un heros.
-	// Le dragon Dragonnet.
+    // RESULAT :
+    // Thomas : Je suis Thomas, un homme.
+    // Le hï¿½ros Arthur : Je suis Arthur, un heros.
+    // Le dragon Dragonnet.
 
 }
