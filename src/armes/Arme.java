@@ -3,7 +3,7 @@ package armes;
 import protagonistes.Dragon;
 import protagonistes.Homme;
 
-public class Arme {
+public abstract class Arme {
 
     protected Homme proprietaire;
 

@@ -2,7 +2,7 @@ package protagonistes;
 
 import affrontement.Bataille;
 
-public class EtreVivant {
+public abstract class EtreVivant {
 
     protected String nom;
 
@@ -40,9 +40,7 @@ public class EtreVivant {
 
     }
 
-    public String mourir() {
-        return "";
-    }
+    public abstract String mourir();
 }
 
 
