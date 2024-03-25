@@ -72,7 +72,7 @@ public class Homme extends EtreVivant{
         } else {
             if (vie > 10) {
                 texte += (parler(arme.getProprietaire().getNom() + " peux-tu me laisser ton " + arme.getNature() + " ?\n" )+
-                        arme.getProprietaire().parler("Pas de soucis, cela me permettra de repondre mon soufle.")+ "\n" +
+                        arme.getProprietaire().parler("Pas de soucis, cela me permettra de repondre mon soufle.")+
                         arme.getProprietaire().lacher());
                 if(arme instanceof Epee){
                     texte += prendreEpee((Epee) arme);
