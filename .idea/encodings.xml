@@ -4,14 +4,29 @@
     <file url="file://$PROJECT_DIR$/src/armes/Arc.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/armes/Arme.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/armes/Epee.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/controleur/ControleurCreerArme.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/controleur/ControleurCreerProtagoniste.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/controleur/ControleurFaireCombattre.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/controleur/ControleurFairePrendreArme.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/controleur/ControleurFaireRejoindreBataille.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/protagonistes/Dragon.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/protagonistes/EtreVivant.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/protagonistes/Homme.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/protagonistes/StockEtreVivant.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/test_fonctionnel/TestArme.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/test_fonctionnel/TestAttaqueEpee.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/test_fonctionnel/TestAttaqueHomme.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/test_fonctionnel/TestBataille.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test_fonctionnel/TestBoundaryEcrivain.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test_fonctionnel/TestControleur.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/test_fonctionnel/TestProtagonistes.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/vue/BoundaryCreerArme.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/vue/BoundaryCreerProtagoniste.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/vue/BoundaryEcrivain.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/vue/BoundaryFaireCombattre.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/vue/BoundaryFairePrendreArme.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/vue/BoundaryFaireRejoindreBataille.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/vue/Clavier.java" charset="UTF-8" />
     <file url="PROJECT" charset="windows-1252" />
   </component>
 </project>
