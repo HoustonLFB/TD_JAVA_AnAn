@@ -1,4 +1,4 @@
-/*package test_fonctionnel;
+package vue;
 
 import affrontement.Bataille;
 import armes.StockArmes;
@@ -8,16 +8,22 @@ import controleur.ControleurFaireCombattre;
 import controleur.ControleurFairePrendreArme;
 import controleur.ControleurFaireRejoindreBataille;
 import protagonistes.StockEtreVivant;
-import vue.BoundaryCreerArme;
-import vue.BoundaryCreerProtagoniste;
-import vue.BoundaryEcrivain;
-import vue.BoundaryFaireCombattre;
-import vue.BoundaryFairePrendreArme;
-import vue.BoundaryFaireRejoindreBataille;
 
-
-public class TestBoundaryEcrivain {
+public class SetUp {
 	public static void main(String[] args) {
+		SupportEcriture supportEcriture;
+		int choixSupport;
+		do {
+			System.out.println("Souhaitez-vous afficher votre texte à l’écran ou l'écrire dans un fichier ?");
+			System.out.println("1 - Affichage écran");
+			System.out.println("2 - Ecriture fichier");
+			choixSupport = Clavier.entrerClavierInt();
+		} while (choixSupport < 1 || choixSupport > 2);
+		if (choixSupport == 1) {
+			supportEcriture = new SupportEcriture(new Ecran());
+		} else {
+			supportEcriture = new SupportEcriture(new Fichier());
+		}
 
 		StockArmes stockArmes = new StockArmes();
 		StockEtreVivant stockEtreVivant = new StockEtreVivant();
@@ -32,17 +38,18 @@ public class TestBoundaryEcrivain {
 
 		BoundaryCreerProtagoniste boundaryCreerProtagoniste = new BoundaryCreerProtagoniste(
 				controleurCreerProtagoniste);
-
 		BoundaryCreerArme boundaryCreerArme = new BoundaryCreerArme(controleurCreerArme);
-		BoundaryFaireCombattre boundaryFaireCombattre = new BoundaryFaireCombattre(controleurFaireCombattre);
-		BoundaryFairePrendreArme boundaryFairePrendreArme = new BoundaryFairePrendreArme(controleurFairePrendreArme);
+
 		BoundaryFaireRejoindreBataille boundaryFaireRejoindreBataille = new BoundaryFaireRejoindreBataille(
-				controleurFaireRejoindreBataille);
+				controleurFaireRejoindreBataille, supportEcriture);
+		BoundaryFaireCombattre boundaryFaireCombattre = new BoundaryFaireCombattre(controleurFaireCombattre,
+				supportEcriture);
+		BoundaryFairePrendreArme boundaryFairePrendreArme = new BoundaryFairePrendreArme(controleurFairePrendreArme,
+				supportEcriture);
 
 		BoundaryEcrivain boundaryEcrivain = new BoundaryEcrivain(boundaryCreerProtagoniste, boundaryCreerArme,
 				boundaryFaireCombattre, boundaryFairePrendreArme, boundaryFaireRejoindreBataille);
 		boundaryEcrivain.menuEcrivain();
-
 	}
+
 }
-*/

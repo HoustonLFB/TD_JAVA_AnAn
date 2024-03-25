@@ -4,9 +4,11 @@ import controleur.ControleurFairePrendreArme;
 
 public class BoundaryFairePrendreArme {
 	ControleurFairePrendreArme controleur;
+	SupportEcriture supportEcriture;
 
-	public BoundaryFairePrendreArme(ControleurFairePrendreArme controleur) {
+	public BoundaryFairePrendreArme(ControleurFairePrendreArme controleur, SupportEcriture supportEcriture) {
 		this.controleur = controleur;
+		this.supportEcriture = supportEcriture;
 	}
 
 	public void fairePrendreArme() {
@@ -21,7 +23,7 @@ public class BoundaryFairePrendreArme {
 		if (nombreHommes != 0 && nombreArmes != 0) {
 			int numHomme = choisirHomme(nombreHommes);
 			int numArme = choisirArme(nombreArmes);
-			controleur.fairePrendreArme(numHomme, numArme);
+			supportEcriture.ecrire(controleur.fairePrendreArme(numHomme, numArme));
 		}
 
 	}

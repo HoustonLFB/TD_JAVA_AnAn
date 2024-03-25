@@ -4,9 +4,12 @@ import controleur.ControleurFaireRejoindreBataille;
 
 public class BoundaryFaireRejoindreBataille {
 	ControleurFaireRejoindreBataille controleur;
+	SupportEcriture supportEcriture;
 
-	public BoundaryFaireRejoindreBataille(ControleurFaireRejoindreBataille controleur) {
+	public BoundaryFaireRejoindreBataille(ControleurFaireRejoindreBataille controleur, SupportEcriture
+			supportEcriture) {
 		this.controleur = controleur;
+		this.supportEcriture = supportEcriture;
 	}
 
 	public void faireRejoindreBataille() {
@@ -24,7 +27,7 @@ public class BoundaryFaireRejoindreBataille {
 					System.out.println("Vous devez entrer un nombre entre 1 et " + nombreCombattant);
 				}
 			} while (numTypeProtagoniste < 1 || numTypeProtagoniste > nombreCombattant);
-			controleur.faireRejoindreBataille(numTypeProtagoniste);
+			supportEcriture.ecrire(controleur.faireRejoindreBataille(numTypeProtagoniste));
 		}
 	}
 

@@ -5,9 +5,11 @@ import protagonistes.TypeEtreVivant;
 
 public class BoundaryFaireCombattre {
 	ControleurFaireCombattre controleur;
+	SupportEcriture supportEcriture;
 
-	public BoundaryFaireCombattre(ControleurFaireCombattre controleur) {
+	public BoundaryFaireCombattre(ControleurFaireCombattre controleur, SupportEcriture supportEcriture) {
 		this.controleur = controleur;
+		this.supportEcriture = supportEcriture;
 	}
 
 	public void faireCombattre() {
@@ -35,7 +37,7 @@ public class BoundaryFaireCombattre {
 				numCible = selectionnerHomme("qui est attaqué.", nombreHomme);
 				typeAttaquant = TypeEtreVivant.DRAGON;
 			}
-			controleur.faireCombattre(typeAttaquant, numAttaquant, numCible);
+			supportEcriture.ecrire(controleur.faireCombattre(typeAttaquant, numAttaquant, numCible));
 		}
 	}
 
